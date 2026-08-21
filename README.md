@@ -9,7 +9,6 @@ A retail demand and inventory analysis using **Excel, Power Query, MySQL, and Po
 Dingdong Fresh (also known as Dingdong Maicai) is a major on-demand e-commerce and fresh grocery platform in China. Founded in 2017 and headquartered in Shanghai. They operate in a retail sector, where maintaining product availability is especially important because demand can change quickly across locations, products, promotional periods, weekends, holidays, and weather conditions. For a fresh-retail business, frequent stockouts can lead to unmet customer demand, while poor inventory planning can also create operational inefficiencies for perishable products.
 
 I analyzed a **90-day sample derived from Dingdong's FreshRetailNet-50K dataset** to understand how product demand and stockout activity vary across stores, products, cities, promotional conditions, and external factors.
-
 The primary goal of this project was to identify where inventory availability problems are most concentrated and uncover demand patterns that could support more targeted inventory planning and replenishment decisions.
 
 The analysis was completed using **Excel and Power Query** for data preparation and exploratory analysis, **MySQL** for SQL-based analysis, and **Power BI** for data modeling, DAX calculations, and dashboard development.
@@ -78,11 +77,9 @@ The SQL queries used for these data-quality checks can be found [here](sql/Dingd
 The analysis shows that Dingdong's main operational challenge is **product availability during periods of strong demand**.
 
 Across **89,100 Store × Product observations**, the overall **stockout rate was 45.91%**, indicating that stockouts were a frequent issue during the 90-day analysis period.
-
 The problem was also concentrated rather than spread evenly across all products. **87 Store × Product combinations** were identified as both high demand and high stockout, making them the highest-priority areas for inventory attention.
 
 Demand also followed clear patterns. **Weekend demand was 34.90% higher than weekday demand**, while discounted observations were associated with **35.95% higher average demand** than non-discounted observations.
-
 Demand levels also varied across cities, products, and time periods, suggesting that a single inventory strategy would not be equally effective across all locations and products.
 
 Overall, the analysis indicates that Dingdong can improve product availability by focusing inventory planning on **high-risk Store × Product combinations, predictable weekend demand, discount-related demand increases, and geographic differences in demand**.
